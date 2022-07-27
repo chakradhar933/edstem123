@@ -19,7 +19,7 @@ jobs:
           aws --version
           aws s3api create-bucket --bucket edstem987-backend1 --region us-east-1
       - name: Terraform Install
-        uses: hashicorp/setup-terraform@v1
+        uses: hashicorp/setup-terraform@v1.2.6
       - name: Terraform fmt
         id: fmt
         run: | 
